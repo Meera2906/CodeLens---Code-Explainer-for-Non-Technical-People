@@ -58,7 +58,7 @@ const CodeInput: React.FC<CodeInputProps> = ({ code, setCode, language, setLangu
       </div>
       
       {/* Editor Surface - With Custom Scrollbar */}
-      <div className="npm-editor-container flex-grow overflow-y-auto custom-scrollbar pt-16 pb-32">
+      <div className="npm-editor-container flex-grow overflow-auto custom-scrollbar pt-16 pb-32">
         <Editor
           value={code}
           onValueChange={code => setCode(code)}
